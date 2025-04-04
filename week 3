@@ -1,0 +1,13 @@
+def calculate_discount (price,discount_percent):
+
+  if(discount_percent)>=0.2:
+    return(price-(price*0.2))
+  else:
+    return(price)
+
+price=float(input("enter price:"))
+discout_percent=float(input("enter discount_percent:"))
+discounted_price=calculate_discount(price,discount_percent)
+
+print(discounted_price)
+
