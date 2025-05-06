@@ -1,0 +1,36 @@
+class animal:
+  def speak (self):
+    print ("this animal communicates like this!")
+class sheep (animal):
+  def speak (self):
+    print ("Meeeeeeee!")
+class cat (animal):
+  def speak (self):
+    print ("Meow!")
+class dog (animal):
+  def speak (self):
+    print ("Woof!")
+
+def animal_sound(animal):
+  animal.speak()
+animal_sound(sheep())
+animal_sound(cat())
+animal_sound(dog())
+
+for animal in [sheep(),cat(),dog()]:
+  animal_sound(animal)
+
+
+class book:
+  def __init__(self,title,author,pages,price):
+    self.title=title
+    self.author=author
+    self.pages=pages
+    self.price=price
+  def genre (self):
+    self.__fantasy=fantasy
+    self.__horror=horror
+class the_river_between (book):
+  def __init__(self,title,author,pages,price,publisher): 
+    super().__init__(title,author,pages,price)
+    self.__publisher=publisher
